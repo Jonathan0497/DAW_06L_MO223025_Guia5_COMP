@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="GraficosApp.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<title>Graficos</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Generador de Gráficos</h2>
+    <div class="form-group">
+        <label for="data-select">Elije los datos a visualizar:</label>
+        <select id="data-select" class="form-control">
+            <option value="navegador">Uso de Navegador</option>
+            <option value="sistema_operativo">Uso de Sistema Operativo</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="color-select">Elije el color del gráfico:</label>
+        <select id="color-select" class="form-control">
+            <option value="purple">Morado</option>
+            <option value="darkred">Rojo Oscuro</option>
+            <option value="skyblue">Celeste</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="orientation-select">Elije la orientación de las barras:</label>
+        <select id="orientation-select" class="form-control">
+            <option value="vertical">Vertical</option>
+            <option value="horizontal">Horizontal</option>
+        </select>
+    </div>
+
+    <button id="generarGrafico" class="btn">Generar Gráfico</button>
+    <button id="limpiarGrafico" class="btn btn-limpiar">Limpiar Gráfico</button>
+
+    <div id="myChart" class="chart"></div>
+</div>
+
+<script src="GraficosApp.js"></script>
+
+</body>
+</html>
